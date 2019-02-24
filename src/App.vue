@@ -10,16 +10,16 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import ChannelList from "@/components/ChannelList.vue";
-import Search from "@/components/Search.vue";
-import Link from "@/components/Link.vue";
+import Vue from 'vue';
+import ChannelList from '@/components/ChannelList.vue';
+import Search from '@/components/Search.vue';
+import Link from '@/components/Link.vue';
 
 export default Vue.extend({
   components: {
     ChannelList,
     Link,
-    Search
-  }
-})
+    Search,
+  },
+});
 </script>

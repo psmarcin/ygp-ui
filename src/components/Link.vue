@@ -6,22 +6,21 @@
 
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 export default Vue.extend({
   data: {
     channelId: '',
-    url: ''
+    url: '',
   },
   computed: {
     channelId(): string {
-      console.log('this.$store.state.channels.selected.channelId', this.$store.state.channels.selected.channelId)
-      return this.$store.state.channels.selected.channelId
+      return this.$store.state.channels.selected.channelId;
     },
     url(): string {
-      return `https://podcasts.psmarcin.me/feed/channel/${this.$store.state.channels.selected.channelId}`
-    }
-  }
-})
+      return `https://podcasts.psmarcin.me/feed/channel/${this.$store.state.channels.selected.channelId}`;
+    },
+  },
+});
 </script>
 
 <style lang="css" scoped>
