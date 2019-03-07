@@ -1,4 +1,4 @@
-import {SerializedChannel, get} from './get';
+import {get, SerializedChannel} from './get';
 
 export const mutations = {
   setList: 'LIST_SET',

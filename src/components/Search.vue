@@ -11,37 +11,34 @@
 
 
 <script lang="ts">
-import Vue from "vue";
-import debounce from "lodash/debounce";
-import Button from "./Button.vue";
-import { actions } from "./../modules/channels/index";
+import debounce from 'lodash/debounce';
+import Vue from 'vue';
+import { actions } from './../modules/channels/index';
+import Button from './Button.vue';
 
 export default Vue.extend({
   components: {
-    Button
+    Button,
   },
   data() {
     return {
-      searchPhrase: ""
+      searchPhrase: '',
     };
   },
-  created: function () {
+  created() {
     this.debouncedGettChannels = debounce(this.getChannels, 200);
   },
   watch: {
     searchPhrase(currentValue): void {
-      console.log("Value ", currentValue);
       this.debouncedGettChannels(currentValue);
-    }
+    },
   },
   methods: {
-    getChannels: function (query: string): any {
-      console.log(query);
-
+    getChannels(query: string): any {
       this.$store.dispatch(`channels/${actions.get}`, query);
     },
-    debouncedGettChannels: debounce((query: string): any => { }, 1000)
-  }
+    debouncedGettChannels: debounce((query: string): any => query, 1000),
+  },
 });
 </script>
 

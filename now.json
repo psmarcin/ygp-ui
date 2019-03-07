@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "name": "yt.psmarcin.me",
+  "type": "static",
+  "static": {
+    "public": "dist",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "alias": "yt.psmarcin.me",
+  "files": [
+    "dist"
+  ]
+}

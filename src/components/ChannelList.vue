@@ -11,21 +11,20 @@
 
 
 <script lang="ts">
-import Vue from "vue";
-import { mutations } from "@/modules/channels/index";
+import { mutations } from '@/modules/channels/index';
+import Vue from 'vue';
 
 export default Vue.extend({
   computed: {
     list(): void {
-      return this.$store.state.channels.list
-    }
+      return this.$store.state.channels.list;
+    },
   },
   methods: {
     select(event: any, second: any): void {
-      console.log('event', event.target.id)
       this.$store.commit(`channels/${mutations.selectChannel}`, event.target.id);
-    }
-  }
+    },
+  },
 });
 </script>
 

@@ -4,13 +4,13 @@
 
 
 <script lang="ts">
-import Vue from "vue";
-import { mutations } from "@/modules/channels/index";
+import { mutations } from '@/modules/channels/index';
+import Vue from 'vue';
 export default Vue.extend({
   computed: {
     value(): number {
       return this.$store.state.var;
-    }
+    },
   },
 });
 </script>
