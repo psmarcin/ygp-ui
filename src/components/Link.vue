@@ -17,18 +17,23 @@
       type="button"
       @click="click"
       v-clipboard="() => url"
-    >Copy to clipboard</button>
+    >{{copyMessage}}</button>
   </span>
 </template>
 
 
 <script lang="ts">
 import Vue from 'vue';
+
+const DEFAULT_COPY_MESSAGE: string = 'Copy link';
+const COPIED_TIMEOUT: number = 3000;
+
 export default Vue.extend({
-  data: {
-    channelId: '',
-    url: '',
-    copied: false,
+  data() {
+    return {
+      copied: false,
+      copyMessage: DEFAULT_COPY_MESSAGE,
+    };
   },
   computed: {
     channelId(): string {
@@ -37,12 +42,18 @@ export default Vue.extend({
     url(): string {
       return `https://podcasts.psmarcin.me/feed/channel/${
         this.$store.state.channels.selected.channelId
-      }`;
+        }`;
     },
   },
   methods: {
     click(): void {
       this.copied = true;
+      this.copyMessage = 'Link Copied!';
+
+      setTimeout(() => {
+        this.copied = false;
+        this.copyMessage = DEFAULT_COPY_MESSAGE;
+      }, COPIED_TIMEOUT);
     },
   },
 });
