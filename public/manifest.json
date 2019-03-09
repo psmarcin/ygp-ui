@@ -1,6 +1,6 @@
 {
-  "name": "youtube-goes-podcast-ui",
-  "short_name": "youtube-goes-podcast-ui",
+  "name": "YouTube Goes Podcasts!",
+  "short_name": "YgP",
   "icons": [
     {
       "src": "./img/icons/android-chrome-196x196.png",
@@ -10,6 +10,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#4DBA87"
+  "background_color": "#e4701d",
+  "theme_color": "#e4701d"
 }
