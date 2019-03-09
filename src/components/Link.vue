@@ -23,26 +23,34 @@
 
 
 <script lang="ts">
+import { stringify } from '@/common/querystring';
+import { IData } from '@/components/LInk.interface';
+import { Options as QueryParams } from '@/modules/options/index.interface';
 import Vue from 'vue';
 
 const DEFAULT_COPY_MESSAGE: string = 'Copy link';
 const COPIED_TIMEOUT: number = 3000;
 
 export default Vue.extend({
-  data() {
+  data(): IData {
     return {
       copied: false,
       copyMessage: DEFAULT_COPY_MESSAGE,
     };
   },
   computed: {
+    options(): QueryParams {
+      return this.$store.state.options;
+    },
     channelId(): string {
       return this.$store.state.channels.selected.channelId;
     },
     url(): string {
-      return `https://podcasts.psmarcin.me/feed/channel/${
+      const stringifiedOption = stringify(this.options);
+
+      return `${process.env.VUE_APP_API_HOST}feed/channel/${
         this.$store.state.channels.selected.channelId
-        }`;
+        }${stringifiedOption}`;
     },
   },
   methods: {

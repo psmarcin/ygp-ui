@@ -8,6 +8,7 @@
       >Let us generate podcasts feed from your favourite YouTube channels.</p>
       <Search/>
       <ChannelList/>
+      <Options/>
       <Link/>
     </div>
   </div>
@@ -16,6 +17,7 @@
 <script lang="ts">
 import ChannelList from '@/components/ChannelList.vue';
 import Link from '@/components/Link.vue';
+import Options from '@/components/Options.vue';
 import Search from '@/components/Search.vue';
 import Vue from 'vue';
 
@@ -24,6 +26,7 @@ export default Vue.extend({
     ChannelList,
     Link,
     Search,
+    Options,
   },
 });
 </script>

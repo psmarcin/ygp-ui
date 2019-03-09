@@ -21,7 +21,7 @@ export default Vue.extend({
     },
   },
   methods: {
-    select(event: any, second: any): void {
+    select(event: any): void {
       this.$store.commit(`channels/${mutations.selectChannel}`, event.target.id);
     },
   },

@@ -1,5 +1,5 @@
-import {get, SerializedChannel} from './get';
-
+import {get} from './get';
+import { SerializedChannel } from './get.interface';
 export const mutations = {
   setList: 'LIST_SET',
   selectChannel: 'CHANNEL_SELECT',
