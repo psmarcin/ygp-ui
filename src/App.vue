@@ -35,8 +35,7 @@ export default Vue.extend({
 .logotype {
   width: 100%;
   height: 100px;
-  background: url("https://www.9marks.org/wp-content/uploads/2012/08/Podcast.jpg")
-    #e4701d center center repeat-x;
+  background: url("/img/background.jpeg") #e4701d center center repeat-x;
   background-size: contain;
 }
 .uk-card-title {

@@ -1,16 +1,5 @@
 import request from './../../common/request';
-
-export interface Channel {
-  channelId: string;
-  thumbnail: string;
-  title: string;
-}
-
-export interface SerializedChannel {
-  channelId: string;
-  thumbnailUrl: string;
-  title: string;
-}
+import { Channel, SerializedChannel } from './get.interface';
 
 
 

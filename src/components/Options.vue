@@ -13,7 +13,7 @@
                 id="form-stacked-text"
                 type="text"
                 v-model="search"
-                placeholder="We will get only videos that has this text in title"
+                placeholder="We will get only videos that contains this phrase in title"
               >
             </div>
           </div>
