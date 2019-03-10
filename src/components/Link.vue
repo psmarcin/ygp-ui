@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import { stringify } from '@/common/querystring';
-import { IData } from '@/components/LInk.interface';
+import { IData } from '@/components/Link.interface';
 import { Options as QueryParams } from '@/modules/options/index.interface';
 import Vue from 'vue';
 

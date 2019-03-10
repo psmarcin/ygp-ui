@@ -5,6 +5,7 @@
   "scripts": {
     "build": "vue-cli-service build",
     "deploy": "npm run build && now && now alias",
+    "deploy:ci": "now -t ${NOWSHTOKEN} && now alias -t ${NOWSHTOKEN}",
     "lint": "vue-cli-service lint --fix",
     "serve": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit"
