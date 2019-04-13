@@ -1,4 +1,4 @@
-# youtube-goes-podcast-ui
+# YouTube goes Podcasts UI
 
 ## Project setup
 ```
