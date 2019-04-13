@@ -6,6 +6,7 @@
       <p
         uk-tooltip="title: Hello World"
       >Let us generate podcasts feed from your favourite YouTube channels.</p>
+      <Trending/>
       <Search/>
       <ChannelList/>
       <Options/>
@@ -19,14 +20,16 @@ import ChannelList from '@/components/ChannelList.vue';
 import Link from '@/components/Link.vue';
 import Options from '@/components/Options.vue';
 import Search from '@/components/Search.vue';
+import Trending from '@/components/Trending.vue';
 import Vue from 'vue';
 
 export default Vue.extend({
   components: {
     ChannelList,
     Link,
-    Search,
     Options,
+    Search,
+    Trending,
   },
 });
 </script>

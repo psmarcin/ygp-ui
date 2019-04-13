@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3 class="uk-card-title">Search for channel</h3>
     <input
       v-model="searchPhrase"
       class="uk-search-input"

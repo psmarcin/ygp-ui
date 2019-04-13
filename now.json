@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "name": "yt.psmarcin.me",
+  "name": "yt.psmarcin.dev",
   "type": "static",
   "static": {
     "public": "dist",
@@ -11,7 +11,7 @@
       }
     ]
   },
-  "alias": "yt.psmarcin.me",
+  "alias": "yt.psmarcin.dev",
   "files": [
     "dist"
   ]
