@@ -1,5 +1,6 @@
 <template>
   <div v-show="selected">
+    <h3 class="uk-card-title">Selected: {{ title }}</h3>
     <button class="uk-button uk-button-default" href v-on:click.stop="toggleOptions">Options</button>
 
     <div class v-show="optionsEnabled">
@@ -39,7 +40,7 @@ export default Vue.extend({
     this.debouncedSetSearch = debounce(this.setSearch, 200);
   },
   computed: {
-    url(): string {
+    title(): string {
       return this.$store.state.channels.selected.title;
     },
     selected(): boolean {
