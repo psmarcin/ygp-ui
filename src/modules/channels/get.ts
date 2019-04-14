@@ -1,10 +1,10 @@
-import request, {utils} from './../../common/request';
+import {utils} from './../../common/request';
 import { Channel, SerializedChannel } from './get.interface';
 
 
 
 export async function get(query: string): Promise<SerializedChannel[]> {
-  const response: any = await request.get('/channels', {
+  const response: any = await utils.get('/channels', {
     params: {
       q: query,
     },
