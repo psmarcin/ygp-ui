@@ -1,4 +1,7 @@
 # YouTube goes Podcasts UI
+This is front-end app layer to generate podcast feed from youtube resources. 
+
+# Development
 
 ## Project setup
 ```
