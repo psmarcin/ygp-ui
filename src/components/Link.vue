@@ -24,12 +24,17 @@
 
 <script lang="ts">
 import { stringify } from '@/common/querystring';
-import { IData } from '@/components/Link.interface';
 import { Options as QueryParams } from '@/modules/options/index.interface';
 import Vue from 'vue';
 
 const DEFAULT_COPY_MESSAGE: string = 'Copy link';
 const COPIED_TIMEOUT: number = 3000;
+
+interface IData {
+  copied: boolean;
+  copyMessage: string;
+}
+
 
 export default Vue.extend({
   data(): IData {
