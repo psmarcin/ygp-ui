@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h3 class="uk-card-title">Search for channel</h3>
     <input
       v-model="searchPhrase"
       class="uk-search-input"
       type="search"
+      autofocus
       placeholder="Start typing channel title..."
     >
   </div>
@@ -27,7 +27,7 @@ export default Vue.extend({
     };
   },
   created() {
-    this.debouncedGettChannels = debounce(this.getChannels, 200);
+    this.debouncedGettChannels = debounce(this.getChannels, 500);
   },
   watch: {
     searchPhrase(currentValue): void {
@@ -38,7 +38,7 @@ export default Vue.extend({
     getChannels(query: string): any {
       this.$store.dispatch(`channels/${actions.get}`, query);
     },
-    debouncedGettChannels: debounce((query: string): any => query, 1000),
+    debouncedGettChannels: debounce((query: string): any => query, 2000),
   },
 });
 </script>
@@ -48,6 +48,7 @@ export default Vue.extend({
   height: 50px;
   margin-bottom: 25px;
   width: 100%;
+  font-size: 25px;
   text-align: center;
 }
 </style>

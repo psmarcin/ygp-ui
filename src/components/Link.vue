@@ -73,5 +73,6 @@ export default Vue.extend({
 }
 .uk-button {
   width: 100%;
+  margin-bottom: 50px;
 }
 </style>

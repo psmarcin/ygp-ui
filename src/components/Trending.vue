@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="trendingContainer">
     <h3 class="uk-card-title">Trending channels</h3>
     <ul class="uk-list uk-list-striped" v-if="list.length">
       <li v-for="item in list" :key="item.channelId" v-on:click.stop="select" :id="item.channelId">
@@ -34,8 +34,20 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.trendingContainer {
+  transition: all 300ms ease-in-out;
+  opacity: 0.3;
+}
+.trendingContainer:hover {
+  opacity: 1;
+}
 .uk-list li {
   cursor: pointer;
+  opacity: 0.5;
+}
+.uk-list li:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 .thumbnail {
   max-height: 30px;

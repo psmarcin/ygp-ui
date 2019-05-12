@@ -1,16 +1,16 @@
 <template>
-  <div id="app" class="uk-scope uk-container">
-    <div class="uk-card uk-card-default uk-card-body uk-card-hover">
-      <div class="logotype"/>
-      <h3 class="uk-card-title">Youtube goes PODCAST!</h3>
-      <p
-        uk-tooltip="title: Hello World"
-      >Let us generate podcasts feed from your favourite YouTube channels.</p>
-      <Trending/>
-      <Search/>
-      <ChannelList/>
-      <Options/>
-      <Link/>
+  <div>
+    <div class="logotype"/>
+    <div id="app" class="uk-scope uk-container">
+      <div class="uk-card uk-card-body">
+        <h3 class="uk-card-title">Youtube goes PODCAST!</h3>
+        <p class="center">🎞 👉🎙 Put youtube channel get podcast audio feed 🎞 👉🎙</p>
+        <Search/>
+        <ChannelList/>
+        <Options/>
+        <Link/>
+        <Trending/>
+      </div>
     </div>
   </div>
 </template>
@@ -42,6 +42,9 @@ export default Vue.extend({
   background-size: contain;
 }
 .uk-card-title {
+  text-align: center;
+}
+.center {
   text-align: center;
 }
 </style>
