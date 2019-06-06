@@ -13,6 +13,7 @@
         <Options/>
         <Link/>
         <Trending/>
+        <FAQ/>
       </div>
     </div>
   </div>
@@ -20,6 +21,7 @@
 
 <script lang="ts">
 import ChannelList from '@/components/ChannelList.vue';
+import FAQ from '@/components/FAQ.vue';
 import Link from '@/components/Link.vue';
 import Options from '@/components/Options.vue';
 import Search from '@/components/Search.vue';
@@ -33,6 +35,7 @@ export default Vue.extend({
     Options,
     Search,
     Trending,
+    FAQ,
   },
 });
 </script>
