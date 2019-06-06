@@ -5,7 +5,7 @@ setProject:
 	gcloud config set project $(PROJECT_ID)
 
 build: setProject
-	docker build -t $(NAME) .
+	npm run build
 
 run: setProject build
 	npm run start
@@ -13,5 +13,5 @@ run: setProject build
 dev:
 	npm run serve
 
-deploy:
-	gsutil rsync -R ./dist/ gs://yt.psmarcin.dev
+deploy: build
+	gsutil -m rsync -R ./dist/ gs://yt.psmarcin.dev
