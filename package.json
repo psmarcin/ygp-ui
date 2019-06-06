@@ -12,10 +12,10 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "0.19.0",
     "lodash": "4.17.11",
     "register-service-worker": "1.6.2",
-    "serve": "11.0.0",
+    "serve": "11.0.1",
     "uikit": "3.1.5",
     "v-clipboard": "2.2.2",
     "vue": "2.6.10",
@@ -27,15 +27,15 @@
   "devDependencies": {
     "@types/axios": "0.14.0",
     "@types/jest": "24.0.13",
-    "@types/lodash": "4.14.132",
+    "@types/lodash": "4.14.133",
     "@vue/cli-plugin-pwa": "3.8.0",
     "@vue/cli-plugin-typescript": "3.8.1",
     "@vue/cli-plugin-unit-jest": "3.8.0",
     "@vue/cli-service": "3.8.0",
     "@vue/test-utils": "^1.0.0-beta.20",
-    "lint-staged": "8.1.7",
+    "lint-staged": "8.2.0",
     "ts-jest": "24.0.2",
-    "typescript": "3.4.5",
+    "typescript": "3.5.1",
     "vue-template-compiler": "2.6.10"
   },
   "gitHooks": {
