@@ -15,5 +15,6 @@ RUN npm run build
 
 
 FROM nginx:alpine
-
+ARG NGINX_PORT=8080
 COPY --from=builder /app/dist/ /usr/share/nginx/html/
+COPY ./nginx/default.conf /usr/share/nginx/conf.d/default.conf

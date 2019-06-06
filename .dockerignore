@@ -1,3 +1,6 @@
 node_modules
 dist
 Dockerfile
+Makefile
+README.md
+.circleci
