@@ -4,7 +4,10 @@
     <div id="app" class="uk-scope uk-container">
       <div class="uk-card uk-card-body">
         <h3 class="uk-card-title">Youtube goes PODCAST!</h3>
-        <p class="center">🎞 👉🎙 Put youtube channel get podcast audio feed 🎞 👉🎙</p>
+        <p class="center">🎞 👉🎙 Select youtube channel and get podcast audio feed 🎞 👉🎙</p>
+        <p class="center">
+          <small>You can use that generated link in your favourite app!</small>
+        </p>
         <Search/>
         <ChannelList/>
         <Options/>

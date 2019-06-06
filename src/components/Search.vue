@@ -50,5 +50,8 @@ export default Vue.extend({
   width: 100%;
   font-size: 25px;
   text-align: center;
+  padding: 15px 30px;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
 }
 </style>
